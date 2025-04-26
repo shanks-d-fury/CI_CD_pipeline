@@ -1,17 +1,21 @@
 .image-container {
-	width: 25vw;
-	padding: 0;
-	position: absolute;
-	top: 10%;
-	right: 5%;
+	width: 90vw; /* Increased from 25vw to fit content */
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	gap: 10px;
 }
 @media (max-width: 600px) {
 	.image-container {
-		width: 40vw;
+		flex-direction: column;
+		width: 95vw;
+		text-align: center;
 	}
 }
 .image {
-	width: 100%;
+	width: 400px;
 	height: auto;
 	filter: brightness(1.05) drop-shadow(0 0 5px #eee5da);
 	animation: pulse-and-float 6s infinite ease-in-out;
@@ -34,4 +38,19 @@
 }
 body {
 	background-color: #262424;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh; /* Ensure full height */
+	margin: 0; /* Remove default margin */
+	padding: 0; /* Remove default padding */
+}
+/* Add this for the heading */
+.image-container h1 {
+	color: white;
+	font-size: 2.5rem; /* Adjust font size as needed */
+	font-family: "Exo 2", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
