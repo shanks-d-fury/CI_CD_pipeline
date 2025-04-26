@@ -1,0 +1,15 @@
+{
+	"name": "ci_cd_pipeline",
+	"version": "1.0.0",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Shashank S",
+	"license": "ISC",
+	"description": "ci_cd_pipeline",
+	"dependencies": {
+		"express": "^5.1.0"
+	}
+}
