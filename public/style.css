@@ -7,6 +7,13 @@
 	justify-content: space-around;
 	gap: 10px;
 }
+
+.image {
+	width: 400px;
+	height: auto;
+	filter: brightness(1.05) drop-shadow(0 0 5px #eee5da);
+	animation: pulse-and-float 6s infinite ease-in-out;
+}
 @media (max-width: 600px) {
 	.image-container {
 		flex-direction: column;
@@ -14,14 +21,9 @@
 		text-align: center;
 	}
 	.image {
-		width: 300px; /* Adjusted width for smaller screens */
+		width: 350px; /* Adjusted width for smaller screens */
+		height: auto;
 	}
-}
-.image {
-	width: 400px;
-	height: auto;
-	filter: brightness(1.05) drop-shadow(0 0 5px #eee5da);
-	animation: pulse-and-float 6s infinite ease-in-out;
 }
 
 @keyframes pulse-and-float {
