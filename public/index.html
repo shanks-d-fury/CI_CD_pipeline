@@ -27,66 +27,8 @@
 			href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap"
 			rel="stylesheet"
 		/>
-		<!-- <link rel="stylesheet" href="/style.css" /> -->
-		<style>
-			.image-container {
-				width: 90vw; /* Increased from 25vw to fit content */
-				padding: 20px;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: space-around;
-				gap: 10px;
-			}
-			@media (max-width: 600px) {
-				.image-container {
-					flex-direction: column;
-					width: 95vw;
-					text-align: center;
-				}
-			}
-			.image {
-				width: 400px;
-				height: auto;
-				filter: brightness(1.05) drop-shadow(0 0 5px #eee5da);
-				animation: pulse-and-float 6s infinite ease-in-out;
-			}
-
-			@keyframes pulse-and-float {
-				0% {
-					transform: translateY(0) scale(0.98);
-					filter: brightness(1.05) drop-shadow(0 0 5px #eee5da);
-				}
-
-				50% {
-					transform: translateY(0) scale(1.03);
-					filter: brightness(1.05) drop-shadow(0 0 7px #eee5da);
-				}
-				100% {
-					transform: translateY(0) scale(0.98);
-					filter: brightness(1.05) drop-shadow(0 0 5px #eee5da);
-				}
-			}
-			body {
-				background-color: #262424;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				min-height: 100vh; /* Ensure full height */
-				margin: 0; /* Remove default margin */
-				padding: 0; /* Remove default padding */
-			}
-			/* Add this for the heading */
-			.image-container h1 {
-				color: white;
-				font-size: 2.5rem; /* Adjust font size as needed */
-				font-family: "Exo 2", sans-serif;
-				font-optical-sizing: auto;
-				font-weight: 400;
-				font-style: normal;
-			}
-		</style>
 		<base href="/" />
+		<link rel="stylesheet" href="/style.css" />
 	</head>
 	<body>
 		<div class="image-container">

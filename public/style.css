@@ -13,6 +13,9 @@
 		width: 95vw;
 		text-align: center;
 	}
+	.image {
+		width: 300px; /* Adjusted width for smaller screens */
+	}
 }
 .image {
 	width: 400px;
