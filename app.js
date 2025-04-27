@@ -2,7 +2,20 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+app.use((req, res, next) => {
+	console.log(`Request received: ${req.method} ${req.url}`);
+	next();
+});
+
 app.use(express.static(path.join(__dirname, "public")));
+
+app.use((req, res, next) => {
+	if (req.url.startsWith("/icon/")) {
+		console.log(`Static file not found: ${req.url}`);
+	}
+	next();
+});
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
